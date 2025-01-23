@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Profile Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="cover-photo"></div>
+      <div class="profile-photo">
+        <img id="profile-photo" src="profile.jpg" alt="Profile Photo" />
+      </div>
+      <div class="profile-info">
+        <h1 id="profile-name">Mohit Kumar Sharma</h1>
+        <p>628 friends</p>
+        <button id="edit-name-btn">Edit Name</button>
+        <button id="save-name-btn" class="hidden">Save Name</button>
+      </div>
+      <div class="profile-buttons">
+        <button>Add to story</button>
+        <button>Edit profile</button>
+        <button id="upload-photo-btn">Upload Photo</button>
+        <input
+          type="file"
+          id="file-input"
+          class="file-input"
+          accept="image/*"
+        />
+      </div>
+      <div class="tabs">
+        <a href="#">Posts</a>
+        <a href="#">About</a>
+        <a href="#">Friends</a>
+        <a href="#">Photos</a>
+        <a href="#">Videos</a>
+        <a href="#">Reels</a>
+        <a href="#">More</a>
+      </div>
+      <div class="locked-profile">
+        <p>You've locked your profile</p>
+      </div>
+      <div class="intro">
+        <h2>Intro</h2>
+        <p id="edit-bio">
+          Everyone has weaknesses, but I’m not everyone. 😂😂 I’m a smart
+          person, I just do stupid things. 😜
+        </p>
+        <button id="edit-bio-btn">Edit Bio</button>
+        <button id="save-bio-btn" class="hidden">Save Bio</button>
+      </div>
+      <div class="posts">
+        <input type="text" placeholder="What's on your mind?" />
+        <div class="post-buttons">
+          <button>Live video</button>
+          <button>Photo/video</button>
+          <button>Life event</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
